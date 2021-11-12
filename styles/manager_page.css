@@ -1,0 +1,18 @@
+h1{
+    text-align: center;
+    margin: 100px !important;
+}
+
+#mynav{
+    padding: 12px !important;
+}
+
+td{
+    word-wrap: break-word !important;
+}
+
+footer {
+    position: fixed;
+    bottom:0;
+    width:100%;
+ }

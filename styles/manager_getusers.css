@@ -1,0 +1,24 @@
+h1{
+    text-align: center;
+    margin: 100px !important;
+}
+
+#mynav{
+    padding: 12px !important;
+}
+
+td{
+    word-wrap: break-word !important;
+}
+.wrapper{
+    min-height: 100%;
+}
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -128px; /* the bottom margin is the negative value of the footer's height */
+}
+.footer {
+    height: 128px; /* .push must be the same height as .footer */
+}

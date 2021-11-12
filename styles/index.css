@@ -1,0 +1,22 @@
+
+
+#mynav{
+    padding: 12px !important;
+}
+
+form{
+  margin: 20px auto;
+  width: fit-content;
+  padding: 30px;
+  border: 3px solid #f1f1f1;
+}
+
+
+
+input[type=text], input[type=password] {
+    display: block;
+    padding: 12px 20px;
+    margin: 12px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
