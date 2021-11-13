@@ -1,3 +1,6 @@
+.wrapper{
+    min-height: 100%;
+}
 h1{
     text-align: center;
     margin: 100px !important;
@@ -10,9 +13,6 @@ h1{
 td{
     word-wrap: break-word !important;
 }
-
-footer {
-    position: fixed;
-    bottom:0;
-    width:100%;
- }
+.footer {
+    height: 128px; /* .push must be the same height as .footer */
+}

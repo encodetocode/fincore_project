@@ -1,3 +1,6 @@
+.wrapper{
+    min-height: 100%;
+}
 h1{
     text-align: center;
     margin: 100px !important;
@@ -8,21 +11,7 @@ h1{
     padding: 12px !important;
 }
 
-form{
-    margin: 20px auto;
-    width: fit-content;
-    padding: 30px;
-    border: 3px solid #f1f1f1;
-  }
 
-input{
-    height: fit-content;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
+.footer {
+    height: 128px; /* .push must be the same height as .footer */
 }
-
-footer {
-    position: fixed;
-    bottom: 0px;
-    width:100%;
- }

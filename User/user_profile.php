@@ -37,7 +37,7 @@ if(isset($_SESSION["ID"])){
 </head>
 <body>
 
-
+<div class = "wrapper">
 
 <form id = "update-form" action="user_func.php" method= "post" >
 
@@ -116,7 +116,7 @@ if(isset($_SESSION["ID"])){
   <button type="submit" class="btn btn-primary" name = "update">Update</button>
 </form>
     
-
+  </div>
 <?php include "../footer.php";?>
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

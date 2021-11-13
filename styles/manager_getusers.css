@@ -1,7 +1,7 @@
-h1{
-    text-align: center;
-    margin: 100px !important;
+.wrapper{
+    min-height: 100%;
 }
+
 
 #mynav{
     padding: 12px !important;
@@ -9,9 +9,6 @@ h1{
 
 td{
     word-wrap: break-word !important;
-}
-.wrapper{
-    min-height: 100%;
 }
 .wrapper {
     min-height: 100%;

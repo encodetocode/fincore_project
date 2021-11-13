@@ -1,3 +1,6 @@
+.wrapper{
+  min-height: 100%;
+}
 form{
     margin: 20px auto;
     width: fit-content;
@@ -10,3 +13,8 @@ form{
     border: 1px solid #ccc;
     box-sizing: border-box;
   }
+  
+
+  .footer {
+    height: 128px; /* .push must be the same height as .footer */
+}

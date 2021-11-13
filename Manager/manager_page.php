@@ -26,9 +26,9 @@ if(isset($_SESSION["ID"])){
 </head>
 <body>
 
-
+<div class = "wrapper">
 <h1><?= "Welcome" . " " . $_SESSION["firstname"] . " " . $_SESSION["lastname"]?></h1>
-    
+</div>
 
 <?php include "../footer.php";?>
 

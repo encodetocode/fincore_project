@@ -18,7 +18,7 @@
 
 </head>
 <body>
-
+<div class = "wrapper">
 
 <form id = "login-form" action = "Login/login_func.php" method = "post">
 
@@ -62,7 +62,7 @@
   <button type="submit" class="btn btn-primary" name = "login" id ="login-button" >Login</button>
 </form>
     
-
+  </div>
 <?php include "footer.php";?>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

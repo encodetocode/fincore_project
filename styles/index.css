@@ -1,4 +1,6 @@
-
+.wrapper{
+  min-height: 100%;
+}
 
 #mynav{
     padding: 12px !important;
@@ -20,3 +22,7 @@ input[type=text], input[type=password] {
     border: 1px solid #ccc;
     box-sizing: border-box;
   }
+
+  .footer {
+    height: 128px; /* .push must be the same height as .footer */
+}
