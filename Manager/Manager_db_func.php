@@ -19,7 +19,7 @@ class Manager_func extends database{
         }
 
         $statement = null;
-
+        //return all users data so can be displayed in the frontend
         return $data;
     }
 

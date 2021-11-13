@@ -5,6 +5,7 @@ class Login_func extends database{
 
     protected function getUser($username, $type , $password){
         
+      //check type of user
         if($type == "Manager"){
             $statement = $this->connect()->prepare('SELECT _password FROM managers WHERE username = ?');
             
@@ -21,6 +22,7 @@ class Login_func extends database{
                 exit();
             }
 
+            //checking if the implemented password matches the one in database
             $hashed_password = $statement-> fetchAll(PDO::FETCH_ASSOC);
             $checkPassword = password_verify($password,$hashed_password[0]["_password"]);
             
@@ -30,7 +32,7 @@ class Login_func extends database{
                 header("location:../index.php?error=Password is not correct");
                 exit(); 
             }elseif($checkPassword == true){
-
+            //if it matches get username data needed for the session
             $statement = $this->connect()->prepare('SELECT * FROM managers WHERE username = ?');
             
             if(!$statement -> execute(array($username))){
@@ -70,7 +72,7 @@ class Login_func extends database{
               header("location:../index.php?error=Username is not found");
               exit();
           }
-
+          //checking if the implemented password matches the one in database
           $hashed_password = $statement-> fetchAll(PDO::FETCH_ASSOC);
           $checkPassword = password_verify($password,$hashed_password[0]["_password"]);
 
@@ -79,7 +81,7 @@ class Login_func extends database{
               header("location:../index.php?error=Password is not correct");
               exit(); 
           }elseif($checkPassword == true){
-
+          //if it matches get username data needed for the session
           $statement = $this->connect()->prepare('SELECT * FROM users WHERE username = ?');
           
           if(!$statement -> execute(array($username))){

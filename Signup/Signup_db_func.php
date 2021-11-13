@@ -7,8 +7,7 @@ class Signup_func extends database{
         
         // first have to hash the password
         $hashed_password = password_hash($password,PASSWORD_DEFAULT);
-        // $log = array($username,$firstname,$lastname,$email,$hashed_password);
-        // console_log($log);
+
         if($type == "Manager"){
             $statement = $this->connect()->prepare('INSERT INTO managers (username,firstname,lastname,email,_password) VALUES  (?,?,?,?,?);');
             
@@ -82,7 +81,7 @@ class Signup_func extends database{
       }
 }
 
-    //first check if the user type then check if it exists in the database (can be used in two conditions if the user taken for sign up and exists for login)
+    //first check usertype then check if email exists in the database 
     protected function checkEmail($email ,$type){
         if($type == "Manager"){
             $statement = $this-> connect() -> prepare('SELECT email FROM managers WHERE email = ?;');

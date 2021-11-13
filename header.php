@@ -1,4 +1,5 @@
 <?php
+// it display the header depending on the conditions , if not logged in, if logged in and which usertype
 if(!isset($_SESSION["ID"])){?>
 <nav class="navbar navbar-dark bg-dark" id = "mynav">
 <div class="container-fluid">
